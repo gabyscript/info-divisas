@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="hero-section">
+        <h1 class="page-title">Info divisas 💰</h1>
+    </header>
+    <main class="main-section">
+        <div class="info-div">
+            <div class="selection-div">
+                <h2 class="selection-title">¿Qué es lo que estás buscando?</h2>
+                <button class="selection-button" id="fiat-button">Divisas internacionales</button>
+                <button class="selection-button" id="indices-button">Indices economicos</button>
+    
+            </div>
+            <div class="conversor-fiat-div" id="conversor-fiat-div">
+                
+                <h2>Elija su divisa a consultar</h2>
+                <select name="" id="divisas">
+                    
+                    
+                </select> 
+                <h2>Cantidad a convertir</h2>
+                <input class="numbers-input" type="number" name="" id="cantidad-divisa" placeholder="Cantidad a convertir">               
+                <h2 id="total-divisa">Total</h2>
+                <div class="buttons-div">
+                    <button class="utility-buttons" id="convertir-divisa-button">Convertir</button>
+                    <button class="utility-buttons" id="graficar-divisa-button">Observar gráficos</button>
+                </div>
+            </div>
+            <div class="conversor-indices-div" id="conversor-indices-div">
+                
+                <h2>Elija su índice a consultar</h2>
+                <select name="" id="indices-economicos">
+                    
+                </select>
+                <h2>Titulo Indicies</h2>
+                <input class="numbers-input" type="number" name="" id="cantidad-indice" placeholder="Cantidad a convertir">
+                <h2 id="total-indice">Total</h2>
+                <div class="buttons-div">
+                    <button class="utility-buttons" id="convertir-indice-button">Convertir</button>
+                    <button class="utility-buttons" id="graficar-indice-button">Observar gráficos</button>
+                </div>
+            </div>
+
+        </div>  
+        <div class="canvas-div" id="canvas-div">
+            <canvas class="chart-canvas" id="chart">
+
+            </canvas> 
+        </div>      
+               
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/script/botones-seleccion.js"></script>  
+    <script src="assets/script/variables-globales.js"></script>
+    <script src="assets/script/calcular-divisas.js"></script>
+    <script src="assets/script/calcular-indices.js"></script>
+    <script src="assets/script/crear-graficas.js"></script>  
+
+</body>
+</html>
